@@ -1,0 +1,412 @@
+body {
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+li {
+	list-style: none;
+}
+#guidePage .item-logo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#guidePage .bg1 {
+	background: url(../../img/bg1.JPG) no-repeat center top;
+	background-size: 414px 736px;
+}
+#guidePage .bg2 {
+	background: url(../../img/bg2.JPG) no-repeat center top;
+	background-size: 414px 736px;
+}
+#guidePage .bg3 {
+	background: url(../../img/bg3.JPG) no-repeat center top;
+	background-size: 414px 736px;
+}
+#guidePage .bg4 {
+	background: url(../../img/bg4.JPG) no-repeat center top;
+	background-size: 414px 736px;
+}
+#guidePage .item-logo a {
+	width: 180px;
+	height: 180px;
+	border-radius:90px;
+	border: 2px solid #fff;
+	display: block;
+	text-align: center;
+	line-height: 180px;
+	position:absolute;
+	font-size: 34px;
+	color: #fff;
+	top:30px;
+	left: 50%;
+	margin-left:-90px;
+	animation: borderRotate 2.5s infinite;
+	-webkit-animation: borderRotate 2.5s infinite;
+}
+#guidePage .item-logo a:after {
+	content:'';
+	display: block;
+	width: 2px;
+	height: 180px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top:175px;
+	left:50%;
+}
+#guidePage .translateY {
+	animation-direction:3s;
+	animation: translateY 3s ease-in-out;
+	
+}
+@-webkit-keyframes translateY{
+	0% {
+		opacity: 0;
+		transform: translateY(800px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes borderRotate{
+	0% {
+		transform: scale(1) rotateY(0deg);
+		-webkit-transform: scale(1) rotateY(0deg);
+	}
+	50% {
+		transform: scale(1.05) rotateY(180deg);
+		-webkit-transform: scale(1.2) rotateY(180deg);
+	}
+	100%{
+		transform: scale(1) rotateY(0deg);
+		-webkit-transform: scale(1) rotateY(0deg);
+	}
+}
+#guidePage .item-logo .myself1,#guidePage .item-logo .myself2 {
+	font-size: 34px;
+	color: #fff;
+	text-shadow: 2px 3px 2px cornflowerblue;
+	position: absolute;
+	top:108px;
+	left: 50%;
+	margin-left: -65px;
+}
+#guidePage .bg2 .myself1,#guidePage .bg2 .myself2 {
+	text-shadow: 2px 3px 2px #3D8066;/*EE30A7*/
+}
+#guidePage .bg3 .myself1,#guidePage .bg3 .myself2 {
+	text-shadow: 2px 3px 2px #db5453;
+}
+#guidePage .bg4 .myself1,#guidePage .bg4 .myself2 {
+	text-shadow: 2px 3px 2px #3F981C;
+}
+#guidePage .item-logo .myself1 {
+	animation: text1Rotate 2.5s infinite;
+	-webkit-animation: text1Rotate 2.5s infinite;
+}
+#guidePage .item-logo .myself2 {
+	animation: text2Rotate 2.5s infinite;
+	transform: rotateY(180deg);
+	-webkit-animation: text2Rotate 2.5s infinite;
+	-webkit-transform: rotateY(180deg);
+}
+@-webkit-keyframes text1Rotate{
+	0% {
+		opacity: 1;
+		transform: scale(1) rotateY(0deg);
+		-webkit-transform: scale(1) rotateY(0deg);
+	}
+	50% {
+		opacity: 0;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1) rotateY(0deg);
+		-webkit-transform: scale(1) rotateY(0deg);
+	}
+}
+@-webkit-keyframes text2Rotate{
+	0% {
+		opacity: 0;
+		transform: scale(1) rotateY(180deg);
+		-webkit-transform: scale(1) rotateY(180deg);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2) rotateY(0deg);
+		-webkit-transform: scale(1.2) rotateY(0deg);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(1) rotateY(180deg);
+		-webkit-transform: scale(1) rotateY(180deg);
+	}
+}
+/*本人性格*/
+#guidePage .bottomPosition {
+	position: absolute;
+	bottom:10%;
+	left:0;
+	width: 100%;
+}
+#guidePage .bottomPosition h2 {
+	text-align: center;
+	line-height: 80px;
+}
+#guidePage .bottomPosition li {
+	line-height: 50px;
+	font-size: 17px;
+	width:50%;
+	text-align: right;
+}
+#guidePage .leftToRight h2,#guidePage .leftToRight li {
+	color: #fff;
+	text-shadow: 2px 3px 3px #1f2661;
+}
+#guidePage .centerToSide h2,#guidePage .centerToSide li {
+	color: #fff;
+	text-shadow: 2px 3px 3px #138837;
+}
+#guidePage .rightToLeft h2,#guidePage .rightToLeft li {
+	color: #fff;
+	text-shadow: 2px 3px 3px #c70e52;
+}
+#guidePage .centerToCenter h2,#guidePage .centerToCenter li {
+	color: #fff;
+	text-shadow: 2px 3px 3px #0e25c7;
+}
+#guidePage .centerToCenter h2 {
+	line-height: 60px;
+	margin-bottom: 0;
+}
+#guidePage .leftToRight li:nth-child(3) {
+	margin-left: 82px;
+}
+#guidePage .leftToRight li:nth-child(4) {
+	float: right;
+	margin-right:44px;
+}
+#guidePage .centerToSide li:nth-child(2) {
+	text-align: center;
+	width: 100%;
+}
+#guidePage .centerToSide li:nth-child(3) {
+	text-align: right;
+	width: 48%;
+}
+#guidePage .centerToSide li:nth-child(4) {
+	float: right;
+	width: 50%;
+	margin-right: 73px;
+}
+#guidePage .rightToLeft li:nth-child(2) {
+	text-align: left;
+	width: 50%;
+	float: right;
+}
+#guidePage .rightToLeft li:nth-child(3) {
+	text-align: center;
+	width: 100%;
+	clear: both;
+}
+#guidePage .rightToLeft li:nth-child(4) {
+	width: 50%;
+	margin-left: -10px;
+}
+#guidePage .centerToCenter {
+	bottom: 13%;
+}
+#guidePage .centerToCenter li {
+	text-align: left;
+	width: 100%;
+	margin-left: 60px;
+	font-size: 20px;
+}
+/*已经完成动画的时候*/
+#guidePage .animated {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-play-state: paused;
+	-webkit-animation-fill-mode: both;
+}
+#guidePage .hidden {
+	display: none !important;
+}
+#guidePage .guide-show .bounceInDown {
+	-webkit-animation-name: bounceInDown;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay: 1.5s;
+	display: block;
+}
+#guidePage .guide-show .bounceInLeft {
+	-webkit-animation-name: bounceInLeft;
+	display: block;
+	-webkit-animation-play-state: running;
+}
+#guidePage .guide-show .bounceInRight {
+	-webkit-animation-name: bounceInRight;
+	display: block;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay: 0.5s;
+}
+#guidePage .guide-show .bounceInUp {
+	-webkit-animation-name: bounceInUp;
+	display: block;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay: 1s;
+}
+@-webkit-keyframes bounceInDown{
+	0%,
+	60%,
+	75%,
+	90%,
+	100% {
+		-webkit-animation-timing-function: ease;
+		animation-timing-function: ease;
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-1000px);
+		transform: translateY(-1000px);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	75% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	90% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@-webkit-keyframes bounceInLeft{
+	0%,
+	60%,
+	75%,
+	90%,
+	100% {
+		-webkit-animation-timing-function: ease;
+		animation-timing-function: ease;
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px);
+	}
+	75% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	90% {
+		-webkit-transform: translateX(5px);
+		transform: translateX(5px);
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@-webkit-keyframes bounceInRight{
+	0%,
+	60%,
+	75%,
+	90%,
+	100% {
+		-webkit-animation-timing-function: ease;
+		animation-timing-function: ease;
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(1000px);
+		transform: translateX(1000px);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translateX(-30px);
+		transform: translateX(-30px);
+	}
+	75% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+	90% {
+		-webkit-transform: translateX(-5px);
+		transform: translateX(-5px);
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@-webkit-keyframes bounceInUp{
+	0%,
+	60%,
+	75%,
+	90%,
+	100% {
+		-webkit-animation-timing-function: ease;
+		animation-timing-function: ease;
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(1000px);
+		transform: translateY(1000px);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	75% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	90% {
+		-webkit-transform: translateY(-50px);
+		transform: translateY(-50px);
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+#guidePage #close {
+	position:absolute;
+	left:50%;
+	width: 160px;
+	margin-left: -80px;
+	bottom: 5%;
+	padding: 10px;
+	color:#fff;
+	border-color: #fff;
+}
+.swiper-pagination .swiper-pagination-bullet {
+	background: #fff;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+	background: blueviolet;
+	opacity: .8;
+}
+.animated span {
+	display: inline-block;
+	width: 40%;
+	border-bottom:1px solid #fff;
+	text-align: center;
+}

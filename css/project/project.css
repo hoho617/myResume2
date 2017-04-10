@@ -1,0 +1,30 @@
+/*
+
+
+#project .bar-dark {
+	line-height: 50px;
+	height:50px;
+}
+
+*/
+#project .bar-dark {
+	line-height:50px;
+	height:50px;
+}
+#project .bar-dark h1 {
+	line-height: 50px;
+	font-size: 20px;
+}
+#project .projectList {
+	height:50px;
+	line-height: 50px;
+	background-color:#387ef5;
+}
+#project .projectList h1 {
+	line-height: 50px;
+	font-size: 20px;
+}
+#project  .detail {
+	line-height: 40px;
+	/*font-size: 18px;*/
+}

@@ -1,0 +1,31 @@
+#projectList {
+	width:100%;
+}
+#projectList .dataList {
+	padding: 10px;
+}
+#projectList .dataList li {
+	line-height: 32px;
+	border-bottom: 1px solid #ececec;
+}
+#projectList .dataList li span {
+	font-size: 20px;
+}
+#projectList .bar-dark {
+	height:50px;
+	line-height: 50px;
+}
+#projectList .bar-dark h1 {
+	line-height: 50px;
+	font-size: 20px;
+}
+#projectList .bar-dark a.button {
+	display: block;
+	line-height: 50px;
+}
+#projectList .bar-dark a.button:before {
+	display: block;
+	line-height: 43px;
+	font-size: 30px;
+	margin-right:4px;
+}

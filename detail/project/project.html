@@ -1,0 +1,56 @@
+<ion-view id="project" view-title="项目经验页" cache-view="false">
+	<div id="project">
+		<ion-side-menus>
+			<!--主页面-->
+			<ion-side-menu-content class="bar-positive">
+				<!--主页面顶部bar-->
+				<ion-header-bar class="bar-dark">
+					<a menu-toggle="left" class="button button-icon icon ion-navicon"></a>
+					<h1 class="title">我的项目经验</h1>
+				</ion-header-bar>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img ng-src="img/slide1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img ng-src="img/slide2.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img ng-src="img/slide3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img ng-src="img/slide4.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img ng-src="img/slide5.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img ng-src="img/slide6.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img ng-src="img/slide7.jpg" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</ion-side-menu-content>
+			<!--侧滑页面-->
+			<ion-side-menu side="left" width="220">
+				<!--侧滑页面顶部bar-->
+				<ion-header-bar align-title="center" class="bar-positive projectList">
+					<h1 class="title">项目</h1>
+				</ion-header-bar>
+				<!--侧滑页面主要内容-->
+				<ion-content class="has-header">
+					<ion-list>
+						<!--item href的构成：1，#本页面  2，app本页面链接   3，todolist/{{menu.groupId}}列表页面链接（没有冒号）-->
+						<ion-item class="detail" nav-clear menu-close ng-repeat="project in projects" ui-sref="projectList({typeNumber:{{project.typeNumber}}})">
+							<i class="icon ion-android-clock"></i>{{project.name}}
+						</ion-item>
+					</ion-list>
+				</ion-content>
+			</ion-side-menu>
+		</ion-side-menus>
+	</div>
+</ion-view>

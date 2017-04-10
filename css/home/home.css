@@ -1,0 +1,353 @@
+body {
+	font-size: 16px;
+	background-color: #FFFFFF;
+}
+#home {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+#home .header {
+	width: 100%;
+	overflow: hidden;
+}
+#home .header-box {
+	width: 100%;
+	position:absolute;
+	top:30px;
+	left:0;
+	z-index: 100;
+}
+#home .header .brief-info {
+	float: left;
+	margin-left: 10px;
+}
+#home .header .brief-info h1 {
+	color: #fff;
+	display: inline-block;
+	font-size: 28px;
+	line-height: 50px;
+}
+#home .header .brief-info .job {
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	margin-left:5px;
+}
+#home .header .brief-info-bottom {
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-top:5px;
+}
+#home .header .brief-info-bottom .address {
+	margin-right:5px;
+}
+#home .header .brief-info-bottom .address:before {
+	content:"\f456";
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	display: inline-block;
+    font-family: "Ionicons";
+}
+#home .header .brief-info-bottom .tel:before {
+	content:"\f4b9";
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	display: inline-block;
+    font-family: "Ionicons";
+}
+#home .header .my-pic {
+	float: left;
+	position: absolute;
+	top:-20px;
+	right:6px;
+}
+#home .header .my-pic img{
+	display: block;
+	width: 100px;
+	height: 130px;
+}
+#home .bg {
+	width: 100%;
+	height:120px;
+	background-color: #fff;
+	position: absolute;
+	top:15px;
+	left:0;
+	perspective: 300px;
+}
+#home .bg1 {
+	width: 100%;
+	height: 120px;
+	background-color: #333E50;
+	transform-origin: left;
+	transform:rotate3d(0,1,0,10deg);
+	-webkit-transform:rotate3d(0,1,0,20deg);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+}
+#home .bg2 {
+	width: 100%;
+	height: 80px;
+	background-color: #333E50;
+	transform-origin: left;
+	transform:rotate3d(0,1,0,10deg);
+	-webkit-transform:rotate3d(0,1,0,20deg);
+	position: absolute;
+	top:12px;
+	left:50%;
+	z-index: 100;
+}
+#home .bg3 {
+	width: 100%;
+	height: 125px;
+	background-color: #76726F;
+	transform-origin: left;
+	transform:rotate3d(0,1,0,30deg);
+	-webkit-transform:rotate3d(0,1,0,27deg);
+	position: absolute;
+	top:-2px;
+	left:15%;
+}
+.clearfix:after,.clearfix:before {
+	content:"";
+	display: block;
+	height:0;
+	visibility: hidden;
+	clear: both;
+}
+/*中间部分*/
+#home .main {
+	width:100%;
+	padding-top:160px;
+	padding-left:5px;
+	padding-right:5px;
+	color:#233041;
+	position: relative;
+}
+ul li {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+@media only screen and (min-width: 320px) {
+#home .main .section-left {
+	position: absolute;
+	left:0;
+	top:160px;
+	width:67%;
+	font-size: 14px;
+}
+#home .main  h3 {
+	color:#233041;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	border-bottom: 2px solid #233041;
+	display: inline;
+	padding:3px;
+}
+}
+@media only screen and (min-width: 370px) {
+#home .main .section-left {
+	position: absolute;
+	left:5px;
+	top:160px;
+	width:67%;
+	font-size: 15px;
+}
+#home .main  h3 {
+	color:#233041;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	border-bottom: 2px solid #233041;
+	display: inline;
+	padding:3px;
+}
+}
+@media only screen and (min-width: 410px) {
+#home .main .section-left {
+	position: absolute;
+	left:5px;
+	top:160px;
+	width:67%;
+	font-size: 16px;
+}
+#home .main  h3 {
+	color:#233041;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 30px;
+	border-bottom: 2px solid #233041;
+	display: inline;
+	padding:3px;
+}
+}
+#home .main .section-left .education .educationExp:before {
+	content:'\f357';
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}
+#home .main .section-left .title {
+	overflow: hidden;
+	line-height: 30px;
+	border-top:2px solid #ECECEC;
+}
+#home .main .section-left .title li {
+	float: left;
+	margin-right:3px;
+	font-weight: bold;
+	color:#233041;
+}
+#home .main .section-left .title li:last-child{
+	margin-right: 0;
+}
+/*校内实习*/
+#home .main .section-left .exercitation {
+	margin-top:20px;
+}
+#home .main .section-left .exercitation .exercitationExp:before{
+	content:'\f39e';
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}
+#home .main .section-left .exercitation .title li {
+	margin-right:17px;
+}
+#home .main .section-left .exercitation .title li:last-child{
+	margin-right: 0;
+}
+#home .main .section-left .things {
+	width:100%;
+}
+#home .main .section-left .things li{
+	line-height: 22px;
+}
+#home .main .section-left .things li:before {
+   content:'';
+   display: inline-block;
+   width:6px;
+   height:6px;
+   background-color: #233041;
+   margin-right:3px;
+   transform: rotate(45deg);
+}
+/*工作经历*/
+#home .main .section-left .working {
+	margin-top:20px;
+}
+#home .main .section-left .working .workingExp:before {
+	content:"\f417";
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}
+/*自我评价*/
+#home .main .section-left .evaluation {
+	margin-top:30px;
+}
+#home .main .section-left .evaluation .evaluationExp:before {
+	content:"\f38e";
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}
+#home .main .section-left .evaluation p {
+	font-size: 16px;
+	color:#233041;
+	line-height: 28px;
+	padding-top:15px;
+	text-indent: 2em;
+	border-top:2px solid #ECECEC;
+}
+/*右边信息*/
+@media only screen and (min-width:360px ) {
+	#home .main .section-right {
+	float: right;
+	padding-left:69%;
+	font-size: 14px;;
+}
+}
+@media only screen and (min-width:360px ) {
+	#home .main .section-right {
+	float: right;
+	padding-left:69%;
+	font-size: 15px;;
+}
+}
+@media only screen and (min-width:410px ) {
+	#home .main .section-right {
+	float: right;
+	padding-left:69%;
+	font-size: 16px;;
+}
+}
+/*个人信息*/
+#home .main .section-right .my-info{
+	
+}
+#home .main .section-right .my-info .personal-info:before {
+	content:'\f3a0';
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}
+/*#home .main .section-right .my-info .detail-info {
+	padding-top:3px;
+	border-top:2px solid #ECECEC;
+}
+#home .main .section-right .my-info .detail-info li{
+	line-height: 22px;
+}
+#home .main .section-right .my-info .detail-info li:before {
+   content:'';
+   display: inline-block;
+   width:6px;
+   height:6px;
+   background-color: #233041;
+   margin-right:3px;
+   transform: rotate(45deg);
+}*/
+#home .main .section-right ul {
+	padding-top:3px;
+	border-top:2px solid #ECECEC;
+}
+#home .main .section-right ul li{
+	line-height: 22px;
+}
+#home .main .section-right ul li:before {
+   content:'';
+   display: inline-block;
+   width:6px;
+   height:6px;
+   background-color: #233041;
+   margin-right:3px;
+   transform: rotate(45deg);
+}
+#home .main .section-right .my-honor {
+	margin-top:20px;
+}
+#home .main .section-right .my-honor .personal-honor:before {
+	content:'\f356';
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}
+/*专业技能*/
+#home .main .section-right .my-skill {
+	margin-top:20px;
+}
+#home .main .section-right .my-skill .personal-skill:before {
+	content:'\f42f';
+	display: inline-block;
+    font-family: "Ionicons";
+    margin-right:3px;
+}

@@ -1,0 +1,9 @@
+/*项目经验路由*/
+angular.module("projectList.route",['projectList.controller'])
+.config(['$stateProvider',function($stateProvider){
+	$stateProvider.state("projectList",{
+		url:'/projectList/:typeNumber',
+		templateUrl:'detail/projectList/projectList.html',
+		controller:'ProjectListController'
+	})
+	}]);

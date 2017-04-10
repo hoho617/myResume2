@@ -1,0 +1,30 @@
+<ion-view id="projectList" view-title="{{title}}" cache-view="false">
+	<div id="projectList">
+		<ion-header-bar class="bar-dark">
+			<a class="button icon-left ion-chevron-left button-clear" ng-click="goProjectPage()">Back</a>
+			<h1 class="title">{{title}}</h1>
+		</ion-header-bar>
+		<ion-content class="has-header">  
+      		<ul class="dataList" ng-repeat="data in datas">
+        		<li>  
+          			<span>项目名称</span>：{{data.title}}
+        		</li>
+        		<li>  
+          			<span>主要职责</span>：{{data.job}}
+        		</li>
+        		<li>  
+          			<span>开始时间</span>：{{data.startTime}}
+        		</li>
+        		<li>  
+          			<span>结束时间</span>：{{data.endTime}}
+        		</li>
+        		<li>  
+          			<span>项目链接</span>：<a href="{{data.link}}">{{data.link}}</a>
+        		</li>
+        		<li>  
+          			<span>项目描述</span>：{{data.desc}}
+        		</li>
+      		</ul>  
+    	</ion-content>
+	</div>
+</ion-view>

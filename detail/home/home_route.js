@@ -1,0 +1,13 @@
+/*首页路由*/
+angular.module("home.route",['home.controller','home.service'])
+.config(['$stateProvider',function($stateProvider){
+	$stateProvider.state("tab.home",{
+		url:'/home',
+		views:{
+			'tab-home':{
+				templateUrl:'detail/home/home.html',
+				controller:'HomeController'
+			}
+		}
+	})
+	}]);
